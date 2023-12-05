@@ -48,7 +48,7 @@ const Fronted = () => {
           <i class="uil uil-check-circle"></i>
             <div>
               <h3 className="skills__name">React</h3>
-              <span className="skills__level">Basic</span>
+              <span className="skills__level">MEDIUM</span>
             </div>
           </div>
 
@@ -56,7 +56,7 @@ const Fronted = () => {
         <div className="skills__data">
         <i class="uil uil-check-circle"></i>
           <div>
-            <h3 className="skills__name">WordPress</h3>
+            <h3 className="skills__name">React Native</h3>
             <span className="skills__level">MEDIUM</span>
           </div>
         </div>

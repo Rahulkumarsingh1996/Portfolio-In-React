@@ -59,10 +59,32 @@ const Qualification = () => {
               <div>
                 <h3 className="qualification__title">Frontend Developer</h3>
                 <span className="qualification__subtitle">
+                Cylsys Software Solution Pvt Ltd
+                </span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calender-alt">2022 -(Present)</i>
+                </div>
+              </div>
+             
+            </div>
+
+            <div className="qualification__data mt-3">
+              <div></div>
+
+              <div>
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="qualification__title">Frontend Developer</h3>
+                <span className="qualification__subtitle">
                 Qwegle Technologies Private Limited
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt">2022 -2023 (present)</i>
+                  <i className="uil uil-calender-alt">2022 -2023</i>
                 </div>
               </div>
              

@@ -1,11 +1,32 @@
-import React, { useRef } from "react";
-
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 import "./contact.css";
 
 const Contact = () => {
   const form = useRef();
+  const[name , setName] = useState('');
+  const[email,setEmail] = useState('');
+  const[desc , setdesc] = useState('')
 
- 
+ const handlesubmit = (e) =>{
+if(name ==='' || email===''){
+  alert("Name and Email field are required..");
+}else{
+  e.preventDefault();
+  emailjs.sendForm('service_jrirb6f', 'template_ymy57me', form.current, 'T878eAAIFA063D1YP')
+      .then((result) => {
+          console.log("send to the email..",result.text);
+      }, (error) => {
+          console.log("Email error..",error.text);
+      });
+  console.log({ name, email, desc });
+  setName('');
+  setEmail('');
+  setdesc('');
+  console.log("Form submitted");
+  alert("Rahul will touch you soon");
+}
+ }
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
@@ -48,7 +69,7 @@ const Contact = () => {
         <div className="contact__contact">
           <h3 className="contact__title">Write me your project</h3>
 
-          <form  className="contact__form">
+          <form  className="contact__form" onSubmit={handlesubmit} ref={form}>
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>
               <input
@@ -56,31 +77,37 @@ const Contact = () => {
                 name="name"
                 className="contact__form-input"
                 placeholder="Insert your name"
+                onChange={(e)=>setName(e.target.value)}
+                value={name}
               />
             </div>
             <div className="contact__form-div">
               <label className="contact__form-tag">Email</label>
               <input
                 type="email"
-                name="name"
+                name="email"
                 className="contact__form-input"
                 placeholder="Insert your email"
+                onChange={(e)=>setEmail(e.target.value)}
+                value={email}
               />
             </div>
             <div className="contact__form-div contact__form-area">
               <label className="contact__form-tag">Project</label>
               <textarea
-                name="project"
+                name="message"
                 cols="30"
                 rows="10"
                 className="contact__form-input"
                 placeholder="Write your project"
+                onChange={(e) =>setdesc(e.target.value)}
+                value={desc}
               ></textarea>
             </div>{" "}
             <br />
-            <a href="#contact" className="button button--flex">
+            <button type="submit"  className="button button--flex" >
               send message<i class="uil uil-message"></i>
-            </a>
+            </button>
           </form>
         </div>
       </div>

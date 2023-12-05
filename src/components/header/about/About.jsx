@@ -18,8 +18,8 @@ const About = () => {
                 <Info />
 
                 <p className="about__description">Fronted developer,
-                I create web magnificent pages with UI / UX user ,
-                Interface , I have year of experience and many projects are completed to happy with the  carried out.</p><br/>
+                I create web magnificent pages and App magnificent Screens with UI / UX user ,
+                Interface , I have one  year of experience and three projects are completed to happy with the  carried out.</p><br/>
 
                 <a download="" href={CV} className="button button--flex">Download CV
                 <i class="uil uil-file-info-alt "></i></a>

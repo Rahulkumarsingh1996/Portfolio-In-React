@@ -11,25 +11,31 @@ const Backend = () => {
         <i class="uil uil-check-circle"></i>
           <div>
             <h3 className="skills__name">PHP</h3>
-            <span className="skills__level">Basics</span>
+            <span className="skills__level">MEDIUM</span>
           </div>
         </div>
-
 
         <div className="skills__data">
         <i class="uil uil-check-circle"></i>
           <div>
-            <h3 className="skills__name">Python</h3>
-            <span className="skills__level">BASICS</span>
+            <h3 className="skills__name">Ruby On Rails</h3>
+            <span className="skills__level">MEDIUM</span>
           </div>
         </div>
 
+        <div className="skills__data">
+        <i class="uil uil-check-circle"></i>
+          <div>
+            <h3 className="skills__name">Node Js</h3>
+            <span className="skills__level">BASICS</span>
+          </div>
+        </div>
 
         <div className="skills__data">
         <i class="uil uil-check-circle"></i>
           <div>
             <h3 className="skills__name">MYSQL</h3>
-            <span className="skills__level">Basics</span>
+            <span className="skills__level">BASICS</span>
           </div>
         </div>
       </div>
