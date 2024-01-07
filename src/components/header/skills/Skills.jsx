@@ -5,10 +5,10 @@ import Backend from "./Backend";
 import AboutImg from "../../../assets/rahul.svg";
 import Html from "../../../assets/html.png";
 import Css from "../../../assets/css.png";
-import js from "../../../assets/javascript.png";
+import js from "../../../assets/JavaScript.png";
 import react from "../../../assets/React.png";
 import Node from "../../../assets/nodeJs.png";
-import MySql from "../../../assets/mysql1.png";
+import MySql from "../../../assets/mySql.png";
 const Skills = () => {
   return (
     <section className="skills section" id="skills">
