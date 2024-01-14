@@ -22,6 +22,7 @@ const Social = () => {
       >
         <i class="uil uil-whatsapp"></i>
       </a>
+      
     </div>
   );
 };

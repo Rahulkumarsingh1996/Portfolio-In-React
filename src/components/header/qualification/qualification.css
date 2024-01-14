@@ -77,7 +77,50 @@
     background-color: var(--text-color);
     transform: translate(6px, -7px);
 }
-
+/* -------filter menu style here--- */
+.App {
+    /* font-family: sans-serif; */
+    text-align: center;
+    font-family: var(--font-medium);
+  }
+  
+  .grid {
+    /* display: grid; */
+  }
+  
+  .grid-col-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .gap-2 {
+    gap: 0.5rem;
+  }
+  
+  .rounded {
+    border-radius: 8px;
+    padding: 0.7rem;
+  }
+  
+  button {
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.25rem;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.2s ease-out;
+  }
+  
+  button.active,
+  button:hover {
+    background: black;
+    color: white;
+  }
+  .card-data:hover{
+    background-color: black;
+  }
+  
 
 /* ---------------- BREAKPOINTS -------------------- */
 

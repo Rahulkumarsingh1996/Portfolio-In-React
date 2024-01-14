@@ -1,15 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./qualification.css";
-
+import { AnimatePresence, motion } from "framer-motion";
+import data from "./Data";
+import FilterButtons from "./FilterButtons";
 const Qualification = () => {
-  
+  const [displayData, setDisplayData] = useState(data.items);
+  const [active, setActive] = useState("all");
+
+  const handleCategoryClick = (category) => {
+    if (category === active) return;
+    setActive(category);
+    setDisplayData([]);
+
+    if (category === "all") {
+      setDisplayData(data.items);
+      return;
+    }
+
+    const filteredData = data.items.filter(
+      (item) => item.category === category
+    );
+
+    setTimeout(() => {
+      setDisplayData(filteredData);
+    }, 400);
+  };
   return (
-    <section className="qualification section" id='qualification'>
+    <section className="qualification section" id="qualification">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My personel journey</span>
 
       <div className="qualification__container container">
-        <div className="qualification__tabs">
+        {/* <div className="qualification__tabs">
           <div
             className="qualification__button qualification__active button--flex"
           >
@@ -205,6 +227,39 @@ const Qualification = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div> */}
+
+        <div className="App">
+          <FilterButtons active={active} handleClick={handleCategoryClick} />
+
+          <div className="grid grid-col-3 gap-2">
+            <AnimatePresence className='card-data'>
+              {displayData.map(
+                ({ img, position, companyName, year}, i) => (
+                  <motion.div
+                    style={{ overflow: "hidden" }}
+                    key={i}
+                    layout
+                    initial={{ transform: "scale(0)" }}
+                    animate={{ transform: "scale(1)",border:'1px solid #eaebe8' }}
+                    exit={{ transform: "scale(0)" }}
+                  >
+                    <motion.img
+                      src={img}
+                      className="rounded"
+                      alt="nothing"
+                      width="100%"
+                    />
+                    <div className="text-content">
+                      <h4>{position}</h4>
+                      <p>{companyName}</p>
+                      <p>{year}</p>
+                    </div>
+                  </motion.div>
+                )
+              )}
+            </AnimatePresence>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-.header{
+#header{
     width: 100%;
     position: fixed;
     top: 0;
@@ -8,7 +8,19 @@
     padding: 0.4rem 0.2rem;
 }
 
-
+.black-and-white {
+    filter: grayscale(100%);
+  }
+  
+  /* Add a background color for the black-and-white state */
+  .black-and-white .nav {
+    background-color: black;
+  }
+  /* Add this CSS for changing the background color of the entire page */
+  .black-and-white-body {
+    filter: grayscale(100%);
+    background-color: black; 
+  }
 
 .nav{
     height: calc(var(--header-height)+1.5rem);

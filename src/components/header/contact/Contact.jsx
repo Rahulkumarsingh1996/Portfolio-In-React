@@ -8,7 +8,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [desc, setdesc] = useState("");
-  const notify = () => toast("Rahul will touch you soon!");
+  const notify = () => toast("Rahul will touch you soon.!");
 
   const handlesubmit = (e) => {
     if (name === "" || email === "") {

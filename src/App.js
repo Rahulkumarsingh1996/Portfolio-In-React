@@ -8,7 +8,8 @@ import Qualification from "./components/header/qualification/Qualification";
 import Contact from "./components/header/contact/Contact";
 import Footer from "./components/header/footer/Footer";
 import Scrollup from "./components/header/scrollup/Scrollup";
-import DotLoader from "react-spinners/DotLoader";
+// import DotLoader from "react-spinners/DotLoader";
+import RingLoader from "react-spinners/RingLoader";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -16,25 +17,34 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 10000);
+    }, 8000);
   }, []);
+
+  const [blackAndWhite, setBlackAndWhite] = useState(false);
+
+  const handleButtonClick = () => {
+    setBlackAndWhite(!blackAndWhite);
+  };
+
+  const headerClassName = `header ${blackAndWhite ? "black-and-white" : ""}`;
+
   return (
-    <>
+    <div >
       {loading ? (
         <div className="app-loder">
-          <DotLoader
+          <RingLoader
             loading={loading}
             // cssOverride={override}
-            size={100}
+            size={150}
             aria-label="Loading Spinner"
             data-testid="loader"
-            color="#e1b8f9"
+            color="#7bc7dd"
             speedMultiplier={1}
           />
         </div>
       ) : (
-        <div>
-          <Header />
+        <div className={headerClassName}>
+          <Header onButtonClick={handleButtonClick}/>
 
           <main className="main">
             <Home />
@@ -47,7 +57,7 @@ function App() {
           <Scrollup />
         </div>
       )}
-    </>
+    </div>
   );
 }
 

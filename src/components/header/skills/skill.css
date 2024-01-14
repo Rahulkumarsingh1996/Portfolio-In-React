@@ -158,12 +158,12 @@
 	opacity: 1;
 }
 .container .card:hover{
-    /* background-color: black; */
-    background-color: #edf1f5;
+    background-color: black;
+    /* background-color: #edf1f5; */
 }
 .container .card .sci li a {
-	/* color: #fff; */
-	color: #000;
+	color: #fff;
+	/* color: #000; */
 	font-size: 20px;
     margin-right: 30px;
     font-weight: var(--font-medium);
