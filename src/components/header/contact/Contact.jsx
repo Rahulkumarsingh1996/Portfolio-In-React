@@ -3,13 +3,19 @@ import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const Contact = () => {
+const Contact = ({blackAndWhite}) => {
   const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [desc, setdesc] = useState("");
   const notify = () => toast("Rahul will touch you soon.!");
-
+  const textColorStyle = blackAndWhite ? { color: "white" } : null;
+  const backgroundButtonColorStyle = blackAndWhite
+    ? { backgroundColor: "white", color: "black",borderRadius:'15px' }
+    : null;
+  const backgroundNameColorStyle = blackAndWhite
+    ? { backgroundColor: "black", color: "white",borderRadius:'15px' }
+    : null;
   const handlesubmit = (e) => {
     if (name === "" || email === "") {
       alert("Name and Email field are required..");
@@ -40,12 +46,12 @@ const Contact = () => {
   };
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Contact Me</span>
+      <h2 className="section__title" style={textColorStyle}>Get in touch</h2>
+      <span className="section__subtitle" style={textColorStyle}>Contact Me</span>
 
       <div className="contact__container container grid">
         <div className="contact__contact">
-          <h3 className="contact__title">Talk to me</h3>
+          <h3 className="contact__title" style={textColorStyle}>Talk to me</h3>
 
           <div className="contact__info">
             <div className="contact__card">
@@ -78,11 +84,11 @@ const Contact = () => {
         </div>
 
         <div className="contact__contact">
-          <h3 className="contact__title">Write me your project</h3>
+          <h3 className="contact__title" style={textColorStyle}>Write me your project</h3>
 
           <form className="contact__form" onSubmit={handlesubmit} ref={form}>
-            <div className="contact__form-div">
-              <label className="contact__form-tag">Name</label>
+            <div className="contact__form-div" style={backgroundButtonColorStyle}>
+              <label className="contact__form-tag" style={backgroundNameColorStyle}>Name</label>
               <input
                 type="text"
                 name="name"
@@ -92,8 +98,8 @@ const Contact = () => {
                 value={name}
               />
             </div>
-            <div className="contact__form-div">
-              <label className="contact__form-tag">Email</label>
+            <div className="contact__form-div" style={backgroundButtonColorStyle}>
+              <label className="contact__form-tag" style={backgroundNameColorStyle}>Email</label>
               <input
                 type="email"
                 name="email"
@@ -103,8 +109,8 @@ const Contact = () => {
                 value={email}
               />
             </div>
-            <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag">Project</label>
+            <div className="contact__form-div contact__form-area" style={backgroundButtonColorStyle}>
+              <label className="contact__form-tag" style={backgroundNameColorStyle}>Project</label>
               <textarea
                 name="message"
                 cols="30"
@@ -116,7 +122,7 @@ const Contact = () => {
               ></textarea>
             </div>{" "}
             <br />
-            <button type="submit" className="button button--flex">
+            <button type="submit" className="button button--flex" style={backgroundButtonColorStyle}>
               send message<i class="uil uil-message"></i>
             </button>
           </form>

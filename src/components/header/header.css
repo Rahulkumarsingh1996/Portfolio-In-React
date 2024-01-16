@@ -3,19 +3,31 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: var(--z-fixed);
+    /* z-index: var(--z-fixed); */
+    z-index: 1;
     background-color: var(--body-color);
     padding: 0.4rem 0.2rem;
 }
 
 .black-and-white {
-    filter: grayscale(100%);
-  }
-  
-  /* Add a background color for the black-and-white state */
-  .black-and-white .nav {
+    /* filter: grayscale(100%); */
     background-color: black;
   }
+  .toggle-color-button{
+    cursor: pointer;
+  }
+  /* Add a background color for the black-and-white state */
+  .black-and-white .nav,.black-and-white #header,.black-and-white .footer {
+    background-color: black;
+    color: white;
+  }
+  .black-and-white .nav,.black-and-white #header .nav__link{
+    color: white;
+  }
+  .black-and-white .nav,.black-and-white #header .nav__logo{
+    color: white;
+  }
+   
   /* Add this CSS for changing the background color of the entire page */
   .black-and-white-body {
     filter: grayscale(100%);

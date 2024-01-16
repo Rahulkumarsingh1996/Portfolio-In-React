@@ -12,9 +12,12 @@
     grid-template-columns: max-content;
     row-gap: 1rem;
 }
+#linkedin{
+    background-color: #3865b2;
+}
 
 .home__social-icon{
-    font-size: 1.25rem;
+    font-size: 1.60rem;
     color: var(--title-color);
 }
 

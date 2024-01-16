@@ -1,10 +1,11 @@
 import React from "react";
-
-const Social = () => {
+import './home.css'
+const Social = ({blackAndWhite}) => {
+  const textColorStyle = blackAndWhite ? { color: "white" } : null;
   return (
     <div className="home__social">
       <a href="" className="home__social-icon" target="_blank">
-        <i class="uil uil-github"></i>
+        <i class="uil uil-github" style={textColorStyle}></i>
       </a>
 
       <a
@@ -12,7 +13,7 @@ const Social = () => {
         className="home__social-icon"
         target="_blank"
       >
-        <i class="uil uil-linkedin-alt"></i>
+        <i class="uil uil-linkedin-alt" style={textColorStyle}></i>
       </a>
 
       <a
@@ -20,7 +21,7 @@ const Social = () => {
         className="home__social-icon"
         target="_blank"
       >
-        <i class="uil uil-whatsapp"></i>
+        <i class="uil uil-whatsapp" style={textColorStyle}></i>
       </a>
       
     </div>

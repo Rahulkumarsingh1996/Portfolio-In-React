@@ -9,11 +9,14 @@ import js from "../../../assets/JavaScript.png";
 import react from "../../../assets/React.png";
 import Node from "../../../assets/nodeJs.png";
 import MySql from "../../../assets/mySql.png";
-const Skills = () => {
+const Skills = ({blackAndWhite}) => {
+  const textColorStyle = blackAndWhite ? { color: 'white' } : null;
+  const backgroundButtonColorStyle = blackAndWhite ? { backgroundColor: 'white', color: 'black' } : null;
+  const textCardColorStyle = blackAndWhite ? { color: 'black' } : null;
   return (
     <section className="skills section" id="skills">
-      <h2 className="section__title">Skill</h2>
-      <span className="section__subtitle">My technical level</span>
+      <h2 className="section__title" style={textColorStyle}>Skill</h2>
+      <span className="section__subtitle" style={textColorStyle}>My technical level</span>
 
       <div className="skills__container container grid">
         {/* <Fronted />
@@ -22,7 +25,7 @@ const Skills = () => {
         <div className="skill_main_card">
           <section>
             <div class="container_card">
-              <div class="card">
+              <div class="card" style={backgroundButtonColorStyle}>
                 <div class="content">
                   <div class="imgBx">
                     <img src={Html} />
@@ -30,11 +33,11 @@ const Skills = () => {
                 </div>
                 <ul class="sci">
                   <li>
-                    <a href="">Html</a>
+                    <a href="" style={textCardColorStyle}>Html</a>
                   </li>
                 </ul>
               </div>
-              <div class="card">
+              <div class="card" style={backgroundButtonColorStyle}>
                 <div class="content">
                   <div class="imgBx">
                     <img src={Css} />
@@ -42,12 +45,12 @@ const Skills = () => {
                 </div>
                 <ul class="sci">
                   <li>
-                    <a href="">Css</a>
+                    <a href="" style={textCardColorStyle}>Css</a>
                   </li>
                 </ul>
               </div>
 
-              <div class="card">
+              <div class="card" style={backgroundButtonColorStyle}>
                 <div class="content">
                   <div class="imgBx">
                     <img src={js} />
@@ -55,12 +58,12 @@ const Skills = () => {
                 </div>
                 <ul class="sci">
                   <li>
-                    <a href="">JavaScript</a>
+                    <a href="" style={textCardColorStyle}>JavaScript</a>
                   </li>
                 </ul>
               </div>
 
-              <div class="card">
+              <div class="card" style={backgroundButtonColorStyle}>
                 <div class="content">
                   <div class="imgBx">
                     <img src={react} className="react" />
@@ -68,12 +71,12 @@ const Skills = () => {
                 </div>
                 <ul class="sci">
                   <li>
-                    <a href="">React</a>
+                    <a href="" style={textCardColorStyle}>React</a>
                   </li>
                 </ul>
               </div>
 
-              <div class="card">
+              <div class="card" style={backgroundButtonColorStyle}>
                 <div class="content">
                   <div class="imgBx">
                     <img src={react} className="react" />
@@ -81,12 +84,12 @@ const Skills = () => {
                 </div>
                 <ul class="sci">
                   <li>
-                    <a href="">React-Native</a>
+                    <a href="" style={textCardColorStyle}>React-Native</a>
                   </li>
                 </ul>
               </div>
 
-              <div class="card">
+              <div class="card" style={backgroundButtonColorStyle}>
                 <div class="content">
                   <div class="imgBx">
                     <img src={Node} />
@@ -94,12 +97,12 @@ const Skills = () => {
                 </div>
                 <ul class="sci">
                   <li>
-                    <a href="">Node js</a>
+                    <a href="" style={textCardColorStyle}>Node js</a>
                   </li>
                 </ul>
               </div>
 
-              <div class="card">
+              <div class="card" style={backgroundButtonColorStyle}>
                 <div class="content">
                   <div class="imgBx">
                     <img src={MySql} />
@@ -107,7 +110,7 @@ const Skills = () => {
                 </div>
                 <ul class="sci">
                   <li>
-                    <a href="">My Sql</a>
+                    <a href="" style={textCardColorStyle}>My Sql</a>
                   </li>
                 </ul>
               </div>

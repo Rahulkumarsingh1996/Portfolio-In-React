@@ -47,14 +47,14 @@ function App() {
           <Header onButtonClick={handleButtonClick}/>
 
           <main className="main">
-            <Home />
-            <About />
-            <Skills />
-            <Qualification />
-            <Contact />
+            <Home blackAndWhite={blackAndWhite}/>
+            <About blackAndWhite={blackAndWhite}/>
+            <Skills blackAndWhite={blackAndWhite}/>
+            <Qualification blackAndWhite={blackAndWhite}/>
+            <Contact blackAndWhite={blackAndWhite}/>
           </main>
-          <Footer />
-          <Scrollup />
+          <Footer blackAndWhite={blackAndWhite}/>
+          <Scrollup blackAndWhite={blackAndWhite} />
         </div>
       )}
     </div>

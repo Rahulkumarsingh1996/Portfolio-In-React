@@ -77,6 +77,11 @@
     background-color: var(--text-color);
     transform: translate(6px, -7px);
 }
+#button-filter{
+    border-radius: 15px;
+    padding: 6px 18.5px;
+    box-shadow: 0 10px 15px rgba(0.0.0.0.4);
+}
 /* -------filter menu style here--- */
 .App {
     /* font-family: sans-serif; */
