@@ -44,7 +44,7 @@ function App() {
         </div>
       ) : (
         <div className={headerClassName}>
-          <Header onButtonClick={handleButtonClick}/>
+          <Header onButtonClick={handleButtonClick} blackAndWhite={blackAndWhite}/>
 
           <main className="main">
             <Home blackAndWhite={blackAndWhite}/>

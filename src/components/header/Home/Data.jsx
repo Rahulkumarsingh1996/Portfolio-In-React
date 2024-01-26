@@ -10,6 +10,7 @@ const Data = ({ theamLight }) => {
   const backgroundButtonColorStyle = theamLight
     ? { backgroundColor: "white", color: "black" }
     : null;
+  const wrapperClassName = theamLight ? { color: "white" } : null;
   useEffect(() => {
     console.log("theamLight in Home component:", theamLight);
   }, [theamLight]);
@@ -19,15 +20,17 @@ const Data = ({ theamLight }) => {
       <h1 className="home__title" style={textColorStyle}>
         Rahul Singh
       </h1>
+
       <Typewriter
         options={{
-          strings: ["Mobile App Developer","Web Developer"],
+          strings: ["Mobile App Developer", "Web Developer"],
           autoStart: true,
           loop: true,
           wrapperClassName: "custom-typewriter-wrapper",
           cursorClassName: "custom-typewriter-cursor",
         }}
       />
+
       {/* <h3 className="home__subtitle" style={textColorStyle}>
         Front-end Developer{" "}
       </h3> */}

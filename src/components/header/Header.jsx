@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun } from "@fortawesome/free-solid-svg-icons";
-const Header = ({onButtonClick}) => {
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faSun } from "@fortawesome/free-regular-svg-icons";
+const Header = ({ onButtonClick,blackAndWhite }) => {
   /* ---------------- change background color -------------------- */
   window.addEventListener("scroll", function () {
     const header = this.document.querySelector(".header");
@@ -23,7 +24,7 @@ const Header = ({onButtonClick}) => {
   const headerClassName = `header`;
 
   return (
-    <header id='header' className={headerClassName}>
+    <header id="header" className={headerClassName}>
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
           Rahul
@@ -106,9 +107,13 @@ const Header = ({onButtonClick}) => {
         <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
           <i class="uil uil-apps"></i>
         </div>
-        
+
         <div className="toggle-color-button" onClick={onButtonClick}>
+          {blackAndWhite ? 
           <FontAwesomeIcon icon={faSun} />
+          : 
+          <FontAwesomeIcon icon={faMoon} />
+          }
         </div>
       </nav>
     </header>

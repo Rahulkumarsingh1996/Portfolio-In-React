@@ -38,40 +38,34 @@ const Qualification = ({ blackAndWhite }) => {
       </span>
 
       <div className=" container">
-        {/* <div className="qualification__tabs">
-          <div
-            className="qualification__button qualification__active button--flex"
-          >
-            <i className="uil uil-graduation-cap qualification__icon"></i>
+        <div className="qualification__tabs">
+          <div className="qualification__button qualification__active button--flex" style={textColorStyle}>
+            <i className="uil uil-graduation-cap qualification__icon" style={textColorStyle}></i>
             Education
           </div>
 
-          <div
-            className="qualification__button qualification__active button--flex"
-          >
-            <i className="uil uil-briefcase-alt qualification__icon"></i>
+          <div className="qualification__button qualification__active button--flex" style={textColorStyle}>
+            <i className="uil uil-briefcase-alt qualification__icon" style={textColorStyle}></i>
             Experience
           </div>
         </div>
 
         <div className="qualification__section">
-          <div
-            className="qualification__content qualification__content-active"
-          >
+          <div className="qualification__content qualification__content-active">
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Graduation</h3>
-                <span className="qualification__subtitle">
+                <h3 className="qualification__title" style={textColorStyle}>Graduation</h3>
+                <span className="qualification__subtitle" style={textColorStyle}>
                   Narula Institute of techlology
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt">2019 - 2022</i>
+                  <i className="uil uil-calender-alt" style={textColorStyle}>2019 - 2022</i>
                 </div>
               </div>
 
               <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
+                <span className="qualification__rounder" style={backgroundButtonColorStyle}></span>
+                <span className="qualification__line" style={backgroundButtonColorStyle}></span>
               </div>
             </div>
 
@@ -80,59 +74,65 @@ const Qualification = ({ blackAndWhite }) => {
 
               <div>
                 <div>
-                  <span className="qualification__rounder"></span>
-                  <span className="qualification__line"></span>
+                  <span className="qualification__rounder" style={backgroundButtonColorStyle}></span>
+                  <span className="qualification__line" style={backgroundButtonColorStyle}></span>
                 </div>
               </div>
 
               <div>
-                <h3 className="qualification__title">Frontend Developer</h3>
-                <span className="qualification__subtitle">
-                Cylsys Software Solution Pvt Ltd
+                <h3 className="qualification__title" style={textColorStyle}>Software Developer</h3>
+                <span className="qualification__subtitle" style={textColorStyle}>
+                  Cylsys Software Solution Pvt Ltd
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt">2022 -(Present)</i>
+                  <i className="uil uil-calender-alt" style={textColorStyle}>2023 -(Present)</i>
                 </div>
               </div>
-             
             </div>
+
+            
 
             <div className="qualification__data mt-3">
               <div></div>
 
-              <div>
+              {/* <div> */}
                 <div>
-                  <span className="qualification__rounder"></span>
-                  <span className="qualification__line"></span>
+                  <span className="qualification__rounder" style={backgroundButtonColorStyle}></span>
+                  <span className="qualification__line" style={backgroundButtonColorStyle}></span>
                 </div>
-              </div>
+              {/* </div> */}
 
               <div>
-                <h3 className="qualification__title">Frontend Developer</h3>
-                <span className="qualification__subtitle">
-                Qwegle Technologies Private Limited
+                <h3 className="qualification__title" style={textColorStyle}>Frontend Developer</h3>
+                <span className="qualification__subtitle" style={textColorStyle}>
+                  Qwegle Technologies Private Limited
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt">2022 -2023</i>
+                  <i className="uil uil-calender-alt" style={textColorStyle}>2022 -2023</i>
                 </div>
               </div>
-             
             </div>
+          </div>
+        </div>
+        
 
+        {/* diploma section--- */}
+        <div className="qualification__section">
+          <div className="qualification__content qualification__content-active">
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Diploma</h3>
-                <span className="qualification__subtitle">
-                Shaheed Bhagat Singh State University
+                <h3 className="qualification__title" style={textColorStyle}>Diploma</h3>
+                <span className="qualification__subtitle" style={textColorStyle}>
+                  Shaheed Bhagat Singh State University
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt">2017 - 2019</i>
+                  <i className="uil uil-calender-alt" style={textColorStyle}>2017 - 2019</i>
                 </div>
               </div>
 
               <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
+                <span className="qualification__rounder" style={backgroundButtonColorStyle}></span>
+                <span className="qualification__line" style={backgroundButtonColorStyle}></span>
               </div>
             </div>
 
@@ -141,20 +141,20 @@ const Qualification = ({ blackAndWhite }) => {
 
               <div>
                 <div>
-                  <span className="qualification__rounder"></span>
-                  <span className="qualification__line"></span>
+                  <span className="qualification__rounder" style={backgroundButtonColorStyle}></span>
+                  <span className="qualification__line" style={backgroundButtonColorStyle}></span>
                 </div>
               </div>
-              
-               <div>
-                <h3 className="qualification__title">Web Development </h3>
-                <span className="qualification__subtitle">
-                Euphoria GenX - (traning)
+
+              <div>
+                <h3 className="qualification__title" style={textColorStyle}>Web Development </h3>
+                <span className="qualification__subtitle" style={textColorStyle}>
+                  Euphoria GenX - (traning)
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt">2021 - 2021</i>
+                  <i className="uil uil-calender-alt" style={textColorStyle}>2021 - 2021</i>
                 </div>
-              </div> 
+              </div>
             </div>
           </div>
         </div>
@@ -163,18 +163,18 @@ const Qualification = ({ blackAndWhite }) => {
           <div className="qualification__content qualification__content-active">
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">10+2</h3>
-                <span className="qualification__subtitle">
-                High School, Jalalpur Bazar
+                <h3 className="qualification__title" style={textColorStyle}>10+2</h3>
+                <span className="qualification__subtitle" style={textColorStyle}>
+                  High School, Jalalpur Bazar
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt">2014 - 2016</i>
+                  <i className="uil uil-calender-alt" style={textColorStyle}>2014 - 2016</i>
                 </div>
               </div>
 
               <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
+                <span className="qualification__rounder" style={backgroundButtonColorStyle}></span>
+                <span className="qualification__line" style={backgroundButtonColorStyle}></span>
               </div>
             </div>
 
@@ -183,35 +183,35 @@ const Qualification = ({ blackAndWhite }) => {
 
               <div>
                 <div>
-                  <span className="qualification__rounder"></span>
-                  <span className="qualification__line"></span>
+                  <span className="qualification__rounder" style={backgroundButtonColorStyle}></span>
+                  <span className="qualification__line" style={backgroundButtonColorStyle}></span>
                 </div>
               </div>
               <div>
-                <h3 className="qualification__title">Python</h3>
-                <span className="qualification__subtitle">
-                  Tech Learning Solutions Pvt Ltd  - (traning)
+                <h3 className="qualification__title" style={textColorStyle}>Python</h3>
+                <span className="qualification__subtitle" style={textColorStyle}>
+                  Tech Learning Solutions Pvt Ltd - (traning)
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt">2022 - 2022</i>
+                  <i className="uil uil-calender-alt" style={textColorStyle}>2022 - 2022</i>
                 </div>
               </div>
             </div>
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">10th</h3>
-                <span className="qualification__subtitle">
-                Adarsh Janta High School Naini (Saran)
+                <h3 className="qualification__title" style={textColorStyle}>10th</h3>
+                <span className="qualification__subtitle" style={textColorStyle}>
+                  Adarsh Janta High School Naini (Saran)
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt">2013 - 2014</i>
+                  <i className="uil uil-calender-alt" style={textColorStyle}>2013 - 2014</i>
                 </div>
               </div>
 
               <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
+                <span className="qualification__rounder" style={backgroundButtonColorStyle}></span>
+                <span className="qualification__line" style={backgroundButtonColorStyle}></span>
               </div>
             </div>
 
@@ -220,31 +220,31 @@ const Qualification = ({ blackAndWhite }) => {
 
               <div>
                 <div>
-                  <span className="qualification__rounder"></span>
-                  <span className="qualification__line"></span>
+                  <span className="qualification__rounder" style={backgroundButtonColorStyle}></span>
+                  <span className="qualification__line" style={backgroundButtonColorStyle}></span>
                 </div>
               </div>
               <div>
-                <h3 className="qualification__title">Web Development</h3>
-                <span className="qualification__subtitle">
+                <h3 className="qualification__title" style={textColorStyle}>Web Development</h3>
+                <span className="qualification__subtitle" style={textColorStyle}>
                   Udmy - (traning)
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt">2021 - 2021</i>
+                  <i className="uil uil-calender-alt" style={textColorStyle}>2021 - 2021</i>
                 </div>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
-        <div className="App">
+        {/* <div className="App ">
           <FilterButtons
             active={active}
             handleClick={handleCategoryClick}
             blackAndWhite={blackAndWhite}
           />
 
-          <div className="grid grid-col-3 gap-2">
+          <div className="grid grid-col-3 gap-2" id="qualification_cards">
             <AnimatePresence className="card-data">
               {displayData.map(({ img, position, companyName, year }, i) => (
                 <motion.div
@@ -276,7 +276,7 @@ const Qualification = ({ blackAndWhite }) => {
               ))}
             </AnimatePresence>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

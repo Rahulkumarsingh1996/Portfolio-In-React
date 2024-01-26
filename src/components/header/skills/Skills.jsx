@@ -18,12 +18,12 @@ const Skills = ({blackAndWhite}) => {
       <h2 className="section__title" style={textColorStyle}>Skill</h2>
       <span className="section__subtitle" style={textColorStyle}>My technical level</span>
 
-      <div className="skills__container container grid">
+      <div className="skills__container container grid" id="skill_card">
         {/* <Fronted />
 
         <Backend /> */}
         <div className="skill_main_card">
-          <section>
+          {/* <section> */}
             <div class="container_card">
               <div class="card" style={backgroundButtonColorStyle}>
                 <div class="content">
@@ -115,7 +115,7 @@ const Skills = ({blackAndWhite}) => {
                 </ul>
               </div>
             </div>
-          </section>
+          {/* </section> */}
         </div>
       </div>
     </section>

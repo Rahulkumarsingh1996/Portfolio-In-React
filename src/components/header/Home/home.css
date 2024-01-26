@@ -15,6 +15,14 @@
 #linkedin {
   background-color: #3865b2;
 }
+.custom-typewriter-dark {
+  color: white;
+}
+
+/* Light theme */
+.custom-typewriter-light {
+  color: black;
+}
 .custom-typewriter-wrapper {
   /* color: red; */
   color: var(--title-color);

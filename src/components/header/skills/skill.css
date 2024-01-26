@@ -178,6 +178,10 @@
         grid-template-columns: max-content;
         row-gap: 2rem;
     }
+    #skill_card{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 /* -------- for medium device ---- */
