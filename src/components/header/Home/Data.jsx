@@ -1,26 +1,22 @@
 import React, { useEffect } from "react";
-// import Typewriter from "typewriter-effect/dist/core";
 import "./home.css";
 import Typewriter from "typewriter-effect";
 const Data = ({ theamLight }) => {
   const textColorStyle = theamLight ? { color: "white" } : null;
-
-  // const backgroundButtonColorStyle = theamLight ? { color: 'white' } : null;
   // const textbuttonColorStyle = theamLight ? { color: 'black' } : null;
   const backgroundButtonColorStyle = theamLight
     ? { backgroundColor: "white", color: "black" }
     : null;
-  const wrapperClassName = theamLight ? { color: "white" } : null;
   useEffect(() => {
     console.log("theamLight in Home component:", theamLight);
   }, [theamLight]);
 
+  
   return (
-    <div className="home__data">
+    <div className="home__data" data-aos="fade-left">
       <h1 className="home__title" style={textColorStyle}>
         Rahul Singh
       </h1>
-
       <Typewriter
         options={{
           strings: ["Mobile App Developer", "Web Developer"],

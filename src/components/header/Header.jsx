@@ -3,7 +3,7 @@ import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import { faSun } from "@fortawesome/free-regular-svg-icons";
-const Header = ({ onButtonClick,blackAndWhite }) => {
+const Header = ({ onButtonClick, blackAndWhite }) => {
   /* ---------------- change background color -------------------- */
   window.addEventListener("scroll", function () {
     const header = this.document.querySelector(".header");
@@ -14,7 +14,8 @@ const Header = ({ onButtonClick,blackAndWhite }) => {
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
   // const [blackAndWhite, setBlackAndWhite] = useState(false);
-
+  const textColorStyle = blackAndWhite ? { color: "white" } : null;
+  const optionColorStyle = blackAndWhite ? { color: "black" } : null;
   // const handleButtonClick = () => {
   //     setBlackAndWhite(!blackAndWhite);
   // };
@@ -39,6 +40,7 @@ const Header = ({ onButtonClick,blackAndWhite }) => {
                 className={
                   activeNav === "#home" ? "nav__link active-link" : "nav__link"
                 }
+              
               >
                 <i className="uil uil-estate nav__icon"></i>Home
               </a>
@@ -51,6 +53,7 @@ const Header = ({ onButtonClick,blackAndWhite }) => {
                 className={
                   activeNav === "#about" ? "nav__link active-link" : "nav__link"
                 }
+           
               >
                 <i className="uil uil-user nav__icon"></i>About
               </a>
@@ -65,6 +68,7 @@ const Header = ({ onButtonClick,blackAndWhite }) => {
                     ? "nav__link active-link"
                     : "nav__link"
                 }
+             
               >
                 <i className="uil uil-file-alt nav__icon"> </i>Skills
               </a>
@@ -79,6 +83,7 @@ const Header = ({ onButtonClick,blackAndWhite }) => {
                     ? "nav__link active-link"
                     : "nav__link"
                 }
+          
               >
                 <i className="uil uil-scenery nav__icon"></i>Qualification
               </a>
@@ -93,10 +98,19 @@ const Header = ({ onButtonClick,blackAndWhite }) => {
                     ? "nav__link active-link"
                     : "nav__link"
                 }
+         
               >
                 <i className="uil uil-message nav__icon"></i>Contact
               </a>
             </li>
+            
+            <div className="toggle-color-button" onClick={onButtonClick} >
+              {blackAndWhite ? (
+                <FontAwesomeIcon icon={faSun} />
+              ) : (
+                <FontAwesomeIcon icon={faMoon} />
+              )}
+            </div>
           </ul>
           <i
             class="uil uil-times nav__close"
@@ -104,16 +118,8 @@ const Header = ({ onButtonClick,blackAndWhite }) => {
           ></i>
         </div>
 
-        <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
+        <div className="nav__toggle" onClick={() => showMenu(!Toggle)} style={textColorStyle}>
           <i class="uil uil-apps"></i>
-        </div>
-
-        <div className="toggle-color-button" onClick={onButtonClick}>
-          {blackAndWhite ? 
-          <FontAwesomeIcon icon={faSun} />
-          : 
-          <FontAwesomeIcon icon={faMoon} />
-          }
         </div>
       </nav>
     </header>

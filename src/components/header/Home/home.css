@@ -24,7 +24,6 @@
   color: black;
 }
 .custom-typewriter-wrapper {
-  /* color: red; */
   color: var(--title-color);
   position: relative;
   font-size: var(--h3-font-size);
