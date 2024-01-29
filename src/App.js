@@ -17,7 +17,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 80000);
   }, []);
 
   const [blackAndWhite, setBlackAndWhite] = useState(false);

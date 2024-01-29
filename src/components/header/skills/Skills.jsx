@@ -1,7 +1,5 @@
 import React from "react";
 import "./skill.css";
-import Fronted from "./Fronted";
-import Backend from "./Backend";
 import AboutImg from "../../../assets/rahul.svg";
 import Html from "../../../assets/html.png";
 import Css from "../../../assets/css.png";
@@ -19,11 +17,7 @@ const Skills = ({blackAndWhite}) => {
       <span className="section__subtitle" style={textColorStyle}>My technical level</span>
 
       <div className="skills__container container grid" id="skill_card">
-        {/* <Fronted />
-
-        <Backend /> */}
         <div className="skill_main_card">
-          {/* <section> */}
             <div class="container_card">
               <div class="card" style={backgroundButtonColorStyle}>
                 <div class="content">
@@ -115,7 +109,7 @@ const Skills = ({blackAndWhite}) => {
                 </ul>
               </div>
             </div>
-          {/* </section> */}
+         
         </div>
       </div>
     </section>

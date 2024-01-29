@@ -16,12 +16,9 @@ const Header = ({ onButtonClick, blackAndWhite }) => {
   // const [blackAndWhite, setBlackAndWhite] = useState(false);
   const textColorStyle = blackAndWhite ? { color: "white" } : null;
   const optionColorStyle = blackAndWhite ? { color: "black" } : null;
-  // const handleButtonClick = () => {
-  //     setBlackAndWhite(!blackAndWhite);
-  // };
-
-  // const headerClassName = `header ${blackAndWhite ? 'black-and-white' : ''}`;
-
+  const backgroundButtonColorStyle = blackAndWhite
+  ? { backgroundColor: "white", color: "black" }
+  : null;
   const headerClassName = `header`;
 
   return (
@@ -33,7 +30,7 @@ const Header = ({ onButtonClick, blackAndWhite }) => {
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
-            <li className="nav__item">
+            <li className="nav__item" >
               <a
                 href="#home"
                 onClick={() => setActiveNav("#home")}

@@ -3,7 +3,6 @@
     position: sticky;
     top: 0;
     left: 0;
-    /* z-index: var(--z-fixed); */
     z-index: 1;
     background-color: var(--body-color);
     padding: 0.4rem 0.2rem;
@@ -18,7 +17,7 @@
   .toggle-color-button{
     cursor: pointer;
   }
-  /* Add a background color for the black-and-white state */
+  /* Add a background color for the black-and-white state ....*/
   .black-and-white .nav,.black-and-white #header,.black-and-white .footer {
     background-color: black;
     color: white;
@@ -120,6 +119,7 @@
 
     .nav__icon{
         font-size: 1.2rem;
+        /* color: black; */
     }
 
     .nav__close{
@@ -138,6 +138,9 @@
     .nav__toggle{
         font-size: 1.1rem;
         cursor: pointer;
+    }
+    .nav__link{
+        color: black;
     }
 
     .nav__icon,
