@@ -23,6 +23,9 @@
 .custom-typewriter-light {
   color: black;
 }
+.black-and-white .custom-typewriter-wrapper{
+color: #fff;
+}
 .custom-typewriter-wrapper {
   color: var(--title-color);
   position: relative;
