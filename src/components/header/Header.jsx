@@ -17,7 +17,7 @@ const Header = ({ onButtonClick, blackAndWhite }) => {
   const textColorStyle = blackAndWhite ? { color: "white" } : null;
   const optionColorStyle = blackAndWhite ? { color: "black" } : null;
   const backgroundButtonColorStyle = blackAndWhite
-  ? { backgroundColor: "white", color: "black" }
+  ? { backgroundColor: "black"}
   : null;
   const headerClassName = `header`;
 
@@ -28,7 +28,7 @@ const Header = ({ onButtonClick, blackAndWhite }) => {
           Rahul
         </a>
 
-        <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
+        <div className={Toggle ? "nav__menu show-menu" : "nav__menu"} style={backgroundButtonColorStyle}>
           <ul className="nav__list grid">
             <li className="nav__item" >
               <a
@@ -112,6 +112,7 @@ const Header = ({ onButtonClick, blackAndWhite }) => {
           <i
             class="uil uil-times nav__close"
             onClick={() => showMenu(!Toggle)}
+            style={textColorStyle}
           ></i>
         </div>
 
