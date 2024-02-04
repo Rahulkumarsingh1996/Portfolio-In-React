@@ -3,8 +3,9 @@ import './footer.css'
 
 const Footer = ({blackAndWhite}) => {
     const textColorStyle = blackAndWhite ? { color: "white" } : null;
+    const borderColorStyle = blackAndWhite ? { color: "white" } : null;
   return (
-   <footer className="footer">
+   <footer className="footer" style={borderColorStyle}>
     <div className="footer__container container">
         <h1 className="footer__title" style={textColorStyle}>Rahul</h1>
         <ul className="footer__list">

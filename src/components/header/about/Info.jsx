@@ -13,7 +13,7 @@ function Info() {
     <div className="about__box">
      <i class="uil uil-bag about__icon"></i>
         <h3 className="about__title"> Completed</h3>
-            <span className="about__subtitle">5 + projects</span>
+            <span className="about__subtitle">12 + projects</span>
        
     </div>
 

@@ -13,14 +13,11 @@ const Header = ({ onButtonClick, blackAndWhite }) => {
 
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
-  // const [blackAndWhite, setBlackAndWhite] = useState(false);
   const textColorStyle = blackAndWhite ? { color: "white" } : null;
-  const optionColorStyle = blackAndWhite ? { color: "black" } : null;
   const backgroundButtonColorStyle = blackAndWhite
-  ? { backgroundColor: "black"}
-  : null;
+    ? { backgroundColor: "black" }
+    : null;
   const headerClassName = `header`;
-
   return (
     <header id="header" className={headerClassName}>
       <nav className="nav container">
@@ -28,16 +25,18 @@ const Header = ({ onButtonClick, blackAndWhite }) => {
           Rahul
         </a>
 
-        <div className={Toggle ? "nav__menu show-menu" : "nav__menu"} style={backgroundButtonColorStyle}>
+        <div
+          className={Toggle ? "nav__menu show-menu" : "nav__menu"}
+          style={backgroundButtonColorStyle}
+        >
           <ul className="nav__list grid">
-            <li className="nav__item" >
+            <li className="nav__item">
               <a
                 href="#home"
                 onClick={() => setActiveNav("#home")}
                 className={
                   activeNav === "#home" ? "nav__link active-link" : "nav__link"
                 }
-              
               >
                 <i className="uil uil-estate nav__icon"></i>Home
               </a>
@@ -50,7 +49,6 @@ const Header = ({ onButtonClick, blackAndWhite }) => {
                 className={
                   activeNav === "#about" ? "nav__link active-link" : "nav__link"
                 }
-           
               >
                 <i className="uil uil-user nav__icon"></i>About
               </a>
@@ -65,7 +63,6 @@ const Header = ({ onButtonClick, blackAndWhite }) => {
                     ? "nav__link active-link"
                     : "nav__link"
                 }
-             
               >
                 <i className="uil uil-file-alt nav__icon"> </i>Skills
               </a>
@@ -80,7 +77,6 @@ const Header = ({ onButtonClick, blackAndWhite }) => {
                     ? "nav__link active-link"
                     : "nav__link"
                 }
-          
               >
                 <i className="uil uil-scenery nav__icon"></i>Qualification
               </a>
@@ -95,13 +91,12 @@ const Header = ({ onButtonClick, blackAndWhite }) => {
                     ? "nav__link active-link"
                     : "nav__link"
                 }
-         
               >
                 <i className="uil uil-message nav__icon"></i>Contact
               </a>
             </li>
-            
-            <div className="toggle-color-button" onClick={onButtonClick} >
+
+            <div className="toggle-color-button" onClick={onButtonClick}>
               {blackAndWhite ? (
                 <FontAwesomeIcon icon={faSun} />
               ) : (
@@ -116,7 +111,11 @@ const Header = ({ onButtonClick, blackAndWhite }) => {
           ></i>
         </div>
 
-        <div className="nav__toggle" onClick={() => showMenu(!Toggle)} style={textColorStyle}>
+        <div
+          className="nav__toggle"
+          onClick={() => showMenu(!Toggle)}
+          style={textColorStyle}
+        >
           <i class="uil uil-apps"></i>
         </div>
       </nav>

@@ -32,7 +32,9 @@
 .contact__data{
     font-size: var(--small-font-size);
 }
-
+.tost-message{
+    margin-top: 2.5rem;
+}
 .contact__title{
     font-weight: var(--font-medium);
 }

@@ -201,7 +201,7 @@ img {
 
 @media screen and (max-width:768px) {
   body{
-    margin: 0 0 var(--header-height);
+    /* margin: 0 0 var(--header-height); */
   }
   .section{
     padding: 2rem 0 4rem;
@@ -221,7 +221,7 @@ img {
     --big-font-size:2.25rem;
   }
     .container{
-        margin-left: var(--mb-1);
+        margin-left: var(--mb-0.7);
         margin-right: var(--mb-1);
     }
 }

@@ -8,6 +8,10 @@
     border-radius: 1.5rem;
     justify-self: center;
 }
+.about__img:hover{
+    transform: scale(1.2);
+    transition: transform .2s;
+}
 
 .about__info{
     grid-template-columns: repeat(3,140px);

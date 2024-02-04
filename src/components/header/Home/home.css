@@ -94,6 +94,11 @@ color: #fff;
   height: 315px;
   width: 315px;
   animation: profile__animate 8s ease-in-out infinite 1s;
+  
+}
+.home__img:hover{
+  transform: scale(1.2);
+  transition: transform .2s;
 }
 @keyframes profile__animate {
   0% {
