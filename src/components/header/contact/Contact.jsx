@@ -16,10 +16,22 @@ const Contact = ({ blackAndWhite }) => {
   const backgroundNameColorStyle = blackAndWhite
     ? { backgroundColor: "black", color: "white", borderRadius: "15px" }
     : null;
+
+  //... Regex signup email validation
+  const validateUserEmail = (email) => {
+    const emailPattern =
+      /^(?!\d+@)\w+([-+.']\w+)*@(?!\d+\.)\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+    return emailPattern.test(email);
+  };
+
   const handlesubmit = (e) => {
     e.preventDefault();
-    if (name === "" || email === "") {
-      toast.warn("Name and Email are required !");
+    if (name.trim() === "") {
+      toast.warn("please enter your name !");
+    } else if (email.trim() === "") {
+      toast.warn("please enter your email !");
+    } else if (!validateUserEmail(email)) {
+      toast.warn("Please enter a valid email address.");
     } else {
       emailjs
         .sendForm(
