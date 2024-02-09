@@ -9,7 +9,7 @@ import Contact from "./components/header/contact/Contact";
 import Footer from "./components/header/footer/Footer";
 import Scrollup from "./components/header/scrollup/Scrollup";
 // import DotLoader from "react-spinners/DotLoader";
-import RingLoader from "react-spinners/RingLoader";
+import PropagateLoader from "react-spinners/PropagateLoader";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -17,7 +17,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 6000);
+    }, 5000);
   }, []);
 
   const [blackAndWhite, setBlackAndWhite] = useState(false);
@@ -32,13 +32,13 @@ function App() {
     <div >
       {loading ? (
         <div className="app-loder">
-          <RingLoader
+          <PropagateLoader
             loading={loading}
             // cssOverride={override}
-            size={150}
+            size={25}
             aria-label="Loading Spinner"
             data-testid="loader"
-            color="#7bc7dd"
+            color="#bc9ac1"
             speedMultiplier={1}
           />
         </div>

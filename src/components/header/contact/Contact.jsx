@@ -137,7 +137,7 @@ const Contact = ({ blackAndWhite }) => {
                 Email
               </label>
               <input
-                type="email"
+                type="text"
                 name="email"
                 className="contact__form-input"
                 placeholder="Insert your email"
